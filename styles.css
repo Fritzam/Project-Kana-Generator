@@ -1,0 +1,24 @@
+body {
+    background-image: url("https://i.etsystatic.com/5140793/r/il/80f8f3/320318541/il_570xN.320318541.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hiragana-generator {
+    width: 550px;
+    height: 450px;
+    background-color: tan;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hiragana-sign, .button {
+    border: 2px red solid;
+}
