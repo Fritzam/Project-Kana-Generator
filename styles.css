@@ -63,7 +63,6 @@ body {
 .hiragana-sign-image-button,
 .hiragana-sign-text-button {
     height: 35%;
-    border-top: 2px solid aliceblue;
 }
 
 button {
@@ -80,6 +79,10 @@ button {
 }
 
 #sign-text {
-    font-size: 36px;
+    font-size: 60px;
     font-family: Aokahori;
+}
+
+#hiragana-sign-image {
+    font-size: 48px;
 }

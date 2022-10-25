@@ -26,21 +26,32 @@ function randomHiraganaGenerator(hiragana) {
     return [randomSign, number];
 };
 
+//Function that clears Hiragana sign image output field.
+function clearHiraganaField() {
+    hiragana_sign.textContent = '';
+}
+
 
 //Selecting elements and applying them to variables.
 const output = document.getElementById('sign-text');
 const text_button = document.getElementById('text-button');
-const test = document.getElementById('test');
+const hiragana_sign = document.getElementById('hiragana-sign-image');
+const hiragana_sign_button = document.getElementById('hiragana-sign-image-button');
 
+//Placeholder variable for Hiragana sign index, in case if I want sign displayed.
+let randomSignNumberValue = 0;
 
-//Event listener on click on the button.
+//Event listener for click on the button to generate Hiragana string.
 text_button.addEventListener('click', () => {
-    //let randomSign = randomHiraganaGenerator(hiragana);
-    let testingResults = randomHiraganaGenerator(hiragana);
-    output.textContent = testingResults[0];
-    test.textContent = testingResults[1];
+    clearHiraganaField();
+    let randomSign = randomHiraganaGenerator(hiragana);
+    output.textContent = randomSign[0];
+    randomSignNumberValue = randomSign[1];
 });
 
-
-
+//Event listener for click on the button to generate Hiragana sign,
+//based on variable in line 36.
+hiragana_sign_button.addEventListener('click', () => {
+    hiragana_sign.textContent = hiragana_signs[randomSignNumberValue];
+});
 
