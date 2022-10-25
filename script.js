@@ -38,7 +38,7 @@ const text_button = document.getElementById('text-button');
 const hiragana_sign = document.getElementById('hiragana-sign-image');
 const hiragana_sign_button = document.getElementById('hiragana-sign-image-button');
 
-//Placeholder variable for Hiragana sign index, in case if I want sign displayed.
+//Placeholder variable for Hiragana sign index, in case if I want the sign displayed.
 let randomSignNumberValue = 0;
 
 //Event listener for click on the button to generate Hiragana string.
@@ -49,8 +49,8 @@ text_button.addEventListener('click', () => {
     randomSignNumberValue = randomSign[1];
 });
 
-//Event listener for click on the button to generate Hiragana sign,
-//based on variable in line 36.
+/*Event listener for click on the button to generate Hiragana sign,
+based on variable in line 36.*/
 hiragana_sign_button.addEventListener('click', () => {
     hiragana_sign.textContent = hiragana_signs[randomSignNumberValue];
 });
