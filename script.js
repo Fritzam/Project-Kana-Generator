@@ -1,6 +1,12 @@
-//Array consisting of hiragana strings I'm currently learning.
+//Array consisting of Hiragana strings that I'm currently learning.
 const hiragana = ['a', 'e', 'i', 'o', 'u', 'ka', 'ke', 'ki', 'ko', 'ku',
-'sa', 'se', 'shi', 'so', 'su', 'ta', 'te', 'chi', 'to','tsu'];
+'sa', 'se', 'shi', 'so', 'su', 'ta', 'te', 'chi', 'to','tsu',
+'na', 'ne', 'ni', 'no', 'nu'];
+
+//Array consisting of Hiragana signs that I'm currently learning.
+const hiragana_signs = ['あ', 'え', 'い', 'お', 'う', 'か', 'け', 'き', 'こ', 'く',
+'さ', 'せ', 'し', 'そ', 'す', 'た', 'て', 'ち', 'と', 'つ', 'な', 'ね',
+'に', 'の', 'ぬ'];
 
 //Function that returns a randomly generated number from 0 to hiragana.length.
 function getRandomNumber(min, max) {
@@ -13,7 +19,7 @@ function getRandomNumber(min, max) {
 function randomHiraganaGenerator(hiragana) {
     let randomSign = '';
     let number = getRandomNumber(0, hiragana.length - 1);
-    while (number == -1) {
+    while (number === -1) {
         number = getRandomNumber(0, hiragana.length - 1);
         }
     randomSign = hiragana[number];
