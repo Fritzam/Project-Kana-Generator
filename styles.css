@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Kimberley";
-    src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype");
+    font-family: "Aokahori";
+    src: url(./font/Aokahori-K7PXy.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
   }
@@ -72,6 +72,8 @@ button {
     border: solid 3px tan;
     border-radius: 5%;
     background-color: #FFDD99;
-    font-size: 16px;
-    font-family: "Kimberley";
+    font-size: 28px;
+    font-family: "Aokahori";
+    padding: 0;
+    margin: 0;
 }
