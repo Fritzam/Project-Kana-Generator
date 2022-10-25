@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Kimberley";
+    src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
     background-image: url("https://i.etsystatic.com/5140793/r/il/80f8f3/320318541/il_570xN.320318541.jpg");
     display: flex;
@@ -18,10 +25,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.hiragana-sign, .hiragana-sign-text-button {
-    border: 2px red solid;
 }
 
 .hiragana-sign-text-container {
@@ -45,11 +48,30 @@ body {
 .hiragana-sign-text,
 .hiragana-sign-text-button,
 .hiragana-sign-image,
-.hiranaga-sign-image-button {
-    height: 50%;
+.hiragana-sign-image-button {
     width: 100%;
-    border: solid 1px pink;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hiragana-sign-text,
+.hiragana-sign-image {
+    height: 65%;
+}
+
+.hiragana-sign-image-button,
+.hiragana-sign-text-button {
+    height: 35%;
+    border: 2px solid aliceblue;
+}
+
+button {
+    width: 40%;
+    height: 80%;
+    border: solid 3px tan;
+    border-radius: 5%;
+    background-color: #FFDD99;
+    font-size: 16px;
+    font-family: "Kimberley";
 }
