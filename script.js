@@ -4,7 +4,7 @@ const hiragana = ['a', 'e', 'i', 'o', 'u', 'ka', 'ke', 'ki', 'ko', 'ku',
 'na', 'ne', 'ni', 'no', 'nu', 'za', 'ze', 'Zji', 'zo', 'Zzu', 'da', 'de', 'Dji', 'do', 'Dzu',
 'ha', 'he', 'hi', 'ho', 'fu', 'ma', 'me', 'mi', 'mo', 'mu', 'ya', 'yo', 'yu',
 'ra', 're', 'ri', 'ro', 'ru', 'wa', 'wo', 'n', 'ba', 'be', 'bi', 'bo', 'bu',
-'pa', 'pe', 'pi', 'po', 'pu'];
+'pa', 'pe', 'pi', 'po', 'pu', 'ga', 'ge', 'gi', 'go', 'gu'];
 
 //Array consisting of Hiragana signs that I'm currently learning.
 const hiragana_signs = ['あ', 'え', 'い', 'お', 'う', 'か', 'け', 'き', 'こ', 'く',
@@ -12,7 +12,8 @@ const hiragana_signs = ['あ', 'え', 'い', 'お', 'う', 'か', 'け', 'き', 
 'に', 'の', 'ぬ', 'ざ', 'ぜ', 'じ', 'ぞ', 'ず', 'だ', 'で', 'ぢ', 'ど', 'づ',
 'は', 'へ', 'ひ', 'ほ', 'ふ', 'ま', 'め', 'み', 'も', 'む',
 'や', 'ゆ', 'よ', 'ら', 'れ', 'り', 'ろ', 'る', 'わ', 'を', 'ん',
-'ば', 'べ', 'び', 'ぼ', 'ぶ', 'ぱ', 'ぺ', 'ぴ', 'ぽ', 'ぷ'];
+'ば', 'べ', 'び', 'ぼ', 'ぶ', 'ぱ', 'ぺ', 'ぴ', 'ぽ', 'ぷ',
+'が', 'げ', 'ぎ', 'ご', 'ぐ'];
 
 //Function that returns a randomly generated number from 0 to hiragana.length.
 function getRandomNumber(min, max) {
