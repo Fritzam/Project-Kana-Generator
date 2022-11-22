@@ -4,7 +4,7 @@ const hiragana = ['a', 'e', 'i', 'o', 'u', 'ka', 'ke', 'ki', 'ko', 'ku',
 'na', 'ne', 'ni', 'no', 'nu', 'za', 'ze', 'Zji', 'zo', 'Zzu', 'da', 'de', 'Dji', 'do', 'Dzu',
 'ha', 'he', 'hi', 'ho', 'fu', 'ma', 'me', 'mi', 'mo', 'mu', 'ya', 'yo', 'yu',
 'ra', 're', 'ri', 'ro', 'ru', 'wa', 'wo', 'n', 'ba', 'be', 'bi', 'bo', 'bu',
-'pa', 'pe', 'pi', 'po', ' pu'];
+'pa', 'pe', 'pi', 'po', 'pu'];
 
 //Array consisting of Hiragana signs that I'm currently learning.
 const hiragana_signs = ['あ', 'え', 'い', 'お', 'う', 'か', 'け', 'き', 'こ', 'く',
