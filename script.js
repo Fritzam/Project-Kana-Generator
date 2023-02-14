@@ -1,10 +1,19 @@
 //Array consisting of Hiragana strings that I'm currently learning.
-const hiragana = ['a', 'e', 'i', 'o', 'u', 'ka', 'ke', 'ki', 'ko', 'ku',
-'sa', 'se', 'shi', 'so', 'su', 'ta', 'te', 'chi', 'to','tsu',
-'na', 'ne', 'ni', 'no', 'nu', 'za', 'ze', 'Zji', 'zo', 'Zzu', 'da', 'de', 'Dji', 'do', 'Dzu',
-'ha', 'he', 'hi', 'ho', 'fu', 'ma', 'me', 'mi', 'mo', 'mu', 'ya', 'yo', 'yu',
-'ra', 're', 'ri', 'ro', 'ru', 'wa', 'wo', 'n', 'ba', 'be', 'bi', 'bo', 'bu',
-'pa', 'pe', 'pi', 'po', 'pu', 'ga', 'ge', 'gi', 'go', 'gu'];
+const hiragana = {a: {hiragana: 'あ'}, e: {hiragana: 'え'}, i: {hiragana: 'い'}, o: {hiragana: 'お'}, u: {hiragana: 'う'},
+ka: {hiragana: 'か'}, ke: {hiragana: 'け'}, ki: {hiragana: 'き'}, ko: {hiragana: 'こ'}, ku: {hiragana: 'く'},
+sa: {hiragana: 'さ'}, se: {hiragana: 'せ'}, shi: {hiragana: 'し'}, so: {hiragana: 'そ'}, su: {hiragana: 'す'},
+ta: {hiragana: 'た'}, te: {hiragana: 'て'}, chi: {hiragana: 'ち'}, to: {hiragana: 'と'}, tsu: {hiragana: 'つ'},
+na: {hiragana: 'な'}, ne: {hiragana: 'ね'}, ni: {hiragana: 'に'}, no: {hiragana: 'の'}, nu: {hiragana: 'ぬ'},
+za: {hiragana: 'ざ'}, ze: {hiragana: 'ぜ'}, Zji: {hiragana: 'じ'}, zo: {hiragana: 'ぞ'}, Zzu: {hiragana: 'ず'},
+da: {hiragana: 'だ'}, de: {hiragana: 'で'}, Dji: {hiragana: 'ぢ'}, do: {hiragana: 'ど'}, Dzu: {hiragana: 'づ'},
+ha: {hiragana: 'は'}, he: {hiragana: 'へ'}, hi: {hiragana: 'ひ'}, ho: {hiragana: 'ほ'}, fu: {hiragana: 'ふ'},
+ma: {hiragana: 'ま'}, me: {hiragana: 'め'}, mi: {hiragana: 'み'}, mo: {hiragana: 'も'}, mu: {hiragana: 'む'},
+ya: {hiragana: 'や'}, yo: {hiragana: 'ゆ'}, yu: {hiragana: 'よ'},
+ra: {hiragana: 'ら'}, re: {hiragana: 'れ'}, ri: {hiragana: 'り'}, ro: {hiragana: 'ろ'}, ru: {hiragana: 'る'},
+wa: {hiragana: 'わ'}, wo: {hiragana: 'を'}, n: {hiragana: 'ん'},
+ba: {hiragana: 'ば'}, be: {hiragana: 'べ'}, bi: {hiragana: 'び'}, bo: {hiragana: 'ぼ'}, bu: {hiragana: 'ぶ'},
+pa: {hiragana: 'ぱ'}, pe: {hiragana: 'ぺ'}, pi: {hiragana: 'ぴ'}, po: {hiragana: 'ぽ'}, pu: {hiragana: 'ぴ'},
+ga: {hiragana: 'が'}, ge: {hiragana: 'げ'}, gi: {hiragana: 'ぎ'}, go: {hiragana: 'ご'}, gu: {hiragana: 'ぐ'}};
 
 //Array consisting of Hiragana signs that I'm currently learning.
 const hiragana_signs = ['あ', 'え', 'い', 'お', 'う', 'か', 'け', 'き', 'こ', 'く',
