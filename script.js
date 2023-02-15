@@ -30,7 +30,7 @@ const sign_array = [
 {name: 'Zji', hiragana: 'じ', katakana: "ジ"},
 {name: 'zo', hiragana: 'ぞ', katakana: "ゾ"},
 {name: 'Zzu', hiragana: 'ず', katakana: "ズ"},
-{name: 'da', hiragana: 'だ', katakana: ""},
+{name: 'da', hiragana: 'だ', katakana: "ダ"},
 {name: "De", hiragana: 'で', katakana: 'デ'},
 {name: 'Dji', hiragana: 'ぢ', katakana: "ヂ"},
 {name: 'do', hiragana: 'ど', katakana: "ド"},
