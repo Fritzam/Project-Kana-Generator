@@ -7,13 +7,35 @@
 
 body {
     background-image: url("https://i.etsystatic.com/5140793/r/il/80f8f3/320318541/il_570xN.320318541.jpg");
+    font-family: "Aokahori";
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     overflow: hidden;
+}
+
+.selection-field {
+    width: 366px;
+    height: 60px;
+    background-color: #c0c0c0;
+    border: solid aliceblue 5px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#hiragana,
+#katakana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 32px;
 }
 
 .hiragana-generator {
@@ -85,4 +107,12 @@ button {
 
 #hiragana-sign-image {
     font-size: 48px;
+}
+
+#hiragana {
+    border-right: aliceblue 2px solid;
+}
+
+#katakana {
+    border-left: aliceblue 2px solid;
 }
