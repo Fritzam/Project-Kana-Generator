@@ -1,45 +1,34 @@
-//Array consisting of Hiragana strings that I'm currently learning.
-const hiragana = {a: {hiragana: 'あ'}, e: {hiragana: 'え'}, i: {hiragana: 'い'}, o: {hiragana: 'お'}, u: {hiragana: 'う'},
-ka: {hiragana: 'か'}, ke: {hiragana: 'け'}, ki: {hiragana: 'き'}, ko: {hiragana: 'こ'}, ku: {hiragana: 'く'},
-sa: {hiragana: 'さ'}, se: {hiragana: 'せ'}, shi: {hiragana: 'し'}, so: {hiragana: 'そ'}, su: {hiragana: 'す'},
-ta: {hiragana: 'た'}, te: {hiragana: 'て'}, chi: {hiragana: 'ち'}, to: {hiragana: 'と'}, tsu: {hiragana: 'つ'},
-na: {hiragana: 'な'}, ne: {hiragana: 'ね'}, ni: {hiragana: 'に'}, no: {hiragana: 'の'}, nu: {hiragana: 'ぬ'},
-za: {hiragana: 'ざ'}, ze: {hiragana: 'ぜ'}, Zji: {hiragana: 'じ'}, zo: {hiragana: 'ぞ'}, Zzu: {hiragana: 'ず'},
-da: {hiragana: 'だ'}, de: {hiragana: 'で'}, Dji: {hiragana: 'ぢ'}, do: {hiragana: 'ど'}, Dzu: {hiragana: 'づ'},
-ha: {hiragana: 'は'}, he: {hiragana: 'へ'}, hi: {hiragana: 'ひ'}, ho: {hiragana: 'ほ'}, fu: {hiragana: 'ふ'},
-ma: {hiragana: 'ま'}, me: {hiragana: 'め'}, mi: {hiragana: 'み'}, mo: {hiragana: 'も'}, mu: {hiragana: 'む'},
-ya: {hiragana: 'や'}, yo: {hiragana: 'ゆ'}, yu: {hiragana: 'よ'},
-ra: {hiragana: 'ら'}, re: {hiragana: 'れ'}, ri: {hiragana: 'り'}, ro: {hiragana: 'ろ'}, ru: {hiragana: 'る'},
-wa: {hiragana: 'わ'}, wo: {hiragana: 'を'}, n: {hiragana: 'ん'},
-ba: {hiragana: 'ば'}, be: {hiragana: 'べ'}, bi: {hiragana: 'び'}, bo: {hiragana: 'ぼ'}, bu: {hiragana: 'ぶ'},
-pa: {hiragana: 'ぱ'}, pe: {hiragana: 'ぺ'}, pi: {hiragana: 'ぴ'}, po: {hiragana: 'ぽ'}, pu: {hiragana: 'ぴ'},
-ga: {hiragana: 'が'}, ge: {hiragana: 'げ'}, gi: {hiragana: 'ぎ'}, go: {hiragana: 'ご'}, gu: {hiragana: 'ぐ'}};
+//Array consisting of objects for every sign in an alphabet.
+const sign_array = [{name: 'a', hiragana: 'あ'}, {name: 'e', hiragana: 'え'}, {name: 'i', hiragana: 'い'}, {name: 'o', hiragana: 'お'}, {name: 'u', hiragana: 'う'},
+{name: 'ka', hiragana: 'か'}, {name: 'ke', hiragana: 'け'}, {name: 'ki', hiragana: 'き'}, {name: 'ko', hiragana: 'こ'}, {name: 'ku', hiragana: 'く'},
+{name: 'sa', hiragana: 'さ'}, {name: 'se', hiragana: 'せ'}, {name: 'shi', hiragana: 'し'}, {name: 'so', hiragana: 'そ'}, {name: 'su', hiragana: 'す'},
+{name: 'ta', hiragana: 'た'}, {name: 'te', hiragana: 'て'}, {name: 'chi', hiragana: 'ち'}, {name: 'to', hiragana: 'と'}, {name: 'tsu', hiragana: 'つ'},
+{name: 'na', hiragana: 'な'}, {name: 'ne', hiragana: 'ね'}, {name: 'ni', hiragana: 'に'}, {name: 'no', hiragana: 'の'}, {name: 'nu', hiragana: 'ぬ'},
+{name: 'za', hiragana: 'ざ'}, {name: 'ze', hiragana: 'ぜ'}, {name: 'Zji', hiragana: 'じ'}, {name: 'zo', hiragana: 'ぞ'}, {name: 'Zzu', hiragana: 'ず'},
+{name: 'da', hiragana: 'だ'}, {name: 'de', hiragana: 'で'}, {name: 'Dji', hiragana: 'ぢ'}, {name: 'do', hiragana: 'ど'}, {name: 'Dzu', hiragana: 'づ'},
+{name: 'ha', hiragana: 'は'}, {name: 'he', hiragana: 'へ'}, {name: 'hi', hiragana: 'ひ'}, {name: 'ho', hiragana: 'ほ'}, {name: 'fu', hiragana: 'ふ'},
+{name: 'ma', hiragana: 'ま'}, {name: 'me', hiragana: 'め'}, {name: 'mi', hiragana: 'み'}, {name: 'mo', hiragana: 'も'}, {name: 'mu', hiragana: 'む'},
+{name: 'ya', hiragana: 'や'}, {name: 'yo', hiragana: 'ゆ'}, {name: 'yu', hiragana: 'よ'},
+{name: 'ra', hiragana: 'ら'}, {name: 're', hiragana: 'れ'}, {name: 'ri', hiragana: 'り'}, {name: 'ro', hiragana: 'ろ'}, {name: 'ru', hiragana: 'る'},
+{name: 'wa', hiragana: 'わ'}, {name: 'wo', hiragana: 'を'}, {name: 'n', hiragana: 'ん'},
+{name: 'ba', hiragana: 'ば'}, {name: 'be', hiragana: 'べ'}, {name: 'bi', hiragana: 'び'}, {name: 'bo', hiragana: 'ぼ'}, {name: 'bu', hiragana: 'ぶ'},
+{name: 'pa', hiragana: 'ぱ'}, {name: 'pe', hiragana: 'ぺ'}, {name: 'pi', hiragana: 'ぴ'}, {name: 'po', hiragana: 'ぽ'}, {name: 'pu', hiragana: 'ぴ'},
+{name: 'ga', hiragana: 'が'}, {name: 'ge', hiragana: 'げ'}, {name: 'gi', hiragana: 'ぎ'}, {name: 'go', hiragana: 'ご'}, {name: 'gu', hiragana: 'ぐ'}];
 
-//Array consisting of Hiragana signs that I'm currently learning.
-const hiragana_signs = ['あ', 'え', 'い', 'お', 'う', 'か', 'け', 'き', 'こ', 'く',
-'さ', 'せ', 'し', 'そ', 'す', 'た', 'て', 'ち', 'と', 'つ', 'な', 'ね',
-'に', 'の', 'ぬ', 'ざ', 'ぜ', 'じ', 'ぞ', 'ず', 'だ', 'で', 'ぢ', 'ど', 'づ',
-'は', 'へ', 'ひ', 'ほ', 'ふ', 'ま', 'め', 'み', 'も', 'む',
-'や', 'ゆ', 'よ', 'ら', 'れ', 'り', 'ろ', 'る', 'わ', 'を', 'ん',
-'ば', 'べ', 'び', 'ぼ', 'ぶ', 'ぱ', 'ぺ', 'ぴ', 'ぽ', 'ぷ',
-'が', 'げ', 'ぎ', 'ご', 'ぐ'];
-
-//Function that returns a randomly generated number from 0 to hiragana.length.
+//Function that returns a randomly generated number from 0 to length of a sign array.
 function getRandomNumber(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1) + min);
-};
+    
+    //Get random number.
+    let number = Math.floor(Math.random() * (max - min + 1) + min);
 
-//Function that returns randomly generated Hiragana string.
-function randomHiraganaGenerator(hiragana) {
-    let randomSign = '';
-    let number = getRandomNumber(0, hiragana.length - 1);
+    //If number === -1 roll again until it's not. I'm not sure why it happens, so I had to do a workaround.
     while (number === -1) {
-        number = getRandomNumber(0, hiragana.length - 1);
-        }
-    randomSign = hiragana[number];
-    return [randomSign, number];
+        number = Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    return number;
 };
 
 //Function that clears Hiragana sign image output field.
@@ -54,20 +43,26 @@ const text_button = document.getElementById('text-button');
 const hiragana_sign = document.getElementById('hiragana-sign-image');
 const hiragana_sign_button = document.getElementById('hiragana-sign-image-button');
 
-//Placeholder variable for Hiragana sign index, in case if I want the sign displayed.
-let randomSignNumberValue = '';
+//Placeholder variable for kana, in case if I want the sign displayed.
+let kanaForm = '';
 
 //Event listener for click on the button to generate Hiragana string.
 text_button.addEventListener('click', () => {
+    //Clear earlier sign.
     clearHiraganaField();
-    let randomSign = randomHiraganaGenerator(hiragana);
-    output.textContent = randomSign[0];
-    randomSignNumberValue = randomSign[1];
+
+    //Get random value.
+    let signNumberValue = getRandomNumber(0, sign_array.length);
+
+    //Assign name to the display field.
+    output.textContent = sign_array[signNumberValue]['name'];
+    //Assign kana to kanaForm variable, if you will want it displayed.
+    kanaForm = sign_array[signNumberValue]['hiragana'];
 });
 
 /*Event listener for click on the button to generate Hiragana sign,
 based on variable in line 36.*/
 hiragana_sign_button.addEventListener('click', () => {
-    hiragana_sign.textContent = hiragana_signs[randomSignNumberValue];
+    hiragana_sign.textContent = kanaForm;
 });
 
